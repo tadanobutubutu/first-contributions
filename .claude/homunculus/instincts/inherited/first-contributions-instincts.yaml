@@ -1,0 +1,465 @@
+# Instincts generated from https://github.com/tadanobutubutu/first-contributions
+# Generated: 2026-06-02T19:01:45.468Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: first-contributions-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Commit Length
+
+## Action
+
+Write moderate-length commit messages (~51 characters)
+
+## Evidence
+
+- Average commit message length: 51 chars
+- Based on 81 commits
+
+---
+id: first-contributions-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: first-contributions-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: first-contributions-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: first-contributions-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: first-contributions-workflow-feature-development
+trigger: "when implementing a new feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Workflow Feature Development
+
+## Action
+
+Follow the feature-development workflow:
+1. Add feature implementation
+2. Add tests for feature
+3. Update documentation
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~14x per month
+- Files: 
+
+---
+id: first-contributions-workflow-add-contributor-to-list
+trigger: "when doing add contributor to list"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Workflow Add Contributor To List
+
+## Action
+
+Follow the add-contributor-to-list workflow:
+1. Edit Contributors.md to add a new line with the contributor's name (and sometimes a link or additional info).
+2. Commit the change with a message referencing the addition.
+3. Open a pull request (often auto-merged or reviewed).
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~30x per month
+- Files: Contributors.md
+
+---
+id: first-contributions-workflow-add-or-update-readme-translation
+trigger: "when doing add or update readme translation"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Workflow Add Or Update Readme Translation
+
+## Action
+
+Follow the add-or-update-readme-translation workflow:
+1. Edit or create docs/translations/README.[lang].md for the target language.
+2. Optionally update Contributors.md to credit the translator.
+3. Commit the changes with a message referencing the translation.
+4. Open a pull request.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: docs/translations/README.*.md, Contributors.md
+
+---
+id: first-contributions-workflow-fix-contributors-list-formatting
+trigger: "when doing fix contributors list formatting"
+confidence: 0.65
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Workflow Fix Contributors List Formatting
+
+## Action
+
+Follow the fix-contributors-list-formatting workflow:
+1. Edit Contributors.md to fix formatting, remove duplicates, or correct syntax.
+2. Commit the change with a message referencing the fix.
+3. Open a pull request.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~3x per month
+- Files: Contributors.md
+
+---
+id: first-contributions-workflow-merge-branch-or-pull-request
+trigger: "when doing merge branch or pull request"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/tadanobutubutu/first-contributions
+---
+
+# First Contributions Workflow Merge Branch Or Pull Request
+
+## Action
+
+Follow the merge-branch-or-pull-request workflow:
+1. Merge the feature/contributor/translation branch into main.
+2. Resolve any merge conflicts if present.
+3. Commit the merge.
+4. Push to the repository.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~10x per month
+- Files: 
+
+---
+id: first-contributions-instinct-file-naming
+trigger: "When creating or renaming a file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct File Naming
+
+## Action
+
+Use kebab-case for file names
+
+## Evidence
+
+- Pattern in namingConventions.files
+- Consistent kebab-case in repo file names
+
+---
+id: first-contributions-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: first-contributions-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: first-contributions-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: first-contributions-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: first-contributions-instinct-export-style
+trigger: "When exporting modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: first-contributions-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Test Location
+
+## Action
+
+Place test files in a separate test directory
+
+## Evidence
+
+- testLocation: separate
+- CommonFolders includes 'docs', but tests not in src
+
+---
+id: first-contributions-instinct-commit-message-format
+trigger: "When writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Commit Message Format
+
+## Action
+
+Use a descriptive message, optionally prefixed with context (e.g., 'docs:', 'Update', 'Add'), referencing the file or action
+
+## Evidence
+
+- docs: add coderkrishna45 to Contributors
+- Update README.sw.md for first contribution
+- Add your-name to Contributors list
+
+---
+id: first-contributions-instinct-add-contributor
+trigger: "When someone wants to add themselves or another person to the list of contributors"
+confidence: 0.99
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Add Contributor
+
+## Action
+
+Edit Contributors.md to add the contributor, commit with a message referencing the addition, and open a pull request
+
+## Evidence
+
+- Workflow: add-contributor-to-list
+- Commits: Add your-name to Contributors list
+- Files: Contributors.md
+
+---
+id: first-contributions-instinct-add-readme-translation
+trigger: "When someone wants to contribute a new translation or update an existing translation of the README"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Add Readme Translation
+
+## Action
+
+Edit or create docs/translations/README.[lang].md, optionally update Contributors.md, commit referencing the translation, and open a pull request
+
+## Evidence
+
+- Workflow: add-or-update-readme-translation
+- Files: docs/translations/README.*.md, Contributors.md
+
+---
+id: first-contributions-instinct-fix-contributors-formatting
+trigger: "When someone notices formatting issues, duplicate names, or syntax errors in Contributors.md"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Fix Contributors Formatting
+
+## Action
+
+Edit Contributors.md to fix formatting, remove duplicates, or correct syntax, commit referencing the fix, and open a pull request
+
+## Evidence
+
+- Workflow: fix-contributors-list-formatting
+- Commits: Update Contributors.md
+
+---
+id: first-contributions-instinct-merge-branch
+trigger: "When a feature, fix, or contributor addition branch is ready to be merged into main"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: tadanobutubutu/first-contributions
+---
+
+# First Contributions Instinct Merge Branch
+
+## Action
+
+Merge the branch into main, resolve conflicts if present, commit the merge, and push to the repository
+
+## Evidence
+
+- Workflow: merge-branch-or-pull-request
+- CommitSequence: Merge the feature/contributor/translation branch into main
+
