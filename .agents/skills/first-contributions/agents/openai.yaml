@@ -1,0 +1,6 @@
+interface:
+  display_name: "First Contributions"
+  short_description: "Repo-specific patterns and workflows for first-contributions"
+  default_prompt: "Use the first-contributions repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
