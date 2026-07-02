@@ -1,3 +1,7 @@
+## [cb9bb21] - 2026-07-02
+### Add Gabriel Borges to Contributors.md (#120322)
+Added Gabriel Borges and several other contributor names to the Contributors.md file, which is a community acknowledgment list for this first-contributions educational repository. These are purely administrative list entries with no changes to functionality, product features, or project documentation.
+
 ## [a849bb5] - 2026-07-01
 ### add yessy vasquez to contributors list (#120314)
 
